@@ -54,7 +54,7 @@ void linkedList::showListwithoptions()
 	}
 	while (ptr != NULL)
 	{
-		cout << "Music Entry: " << ptr->artist << ptr->song << endl;
+		cout << "Music Entry: " << ptr->artist <<"," << ptr->song << endl;
 
 		cout << "Enter P to Play" << endl
 			<< "Enter S to Skip" << endl
@@ -78,11 +78,6 @@ void linkedList::showListwithoptions()
 			this->removeNode(tbd->song);
 			cout << "Song Deleted" << "\n" << endl;
 		}
-		else if (response == 'q' || response == 'Q')
-		{
-			return;
-		}
-
 		ptr = ptr->next;
 
 	}
